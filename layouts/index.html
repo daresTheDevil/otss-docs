@@ -1,0 +1,91 @@
+{{ define "title"}} {{ .Site.Title}} {{end}}
+{{ define "header"}} {{ partial "header" .}} {{end}}
+{{ define "main"}}
+
+<div id="main">
+  <div id="hero">
+    <h1>OTSS Docs</h1>
+    <p>If you need to know how to use it, fix it or talk to it, your'e in the right place.</p>
+  </div>
+  <!-- <div id="hero">
+    <h1>{{.Title}}</h1>
+    <p>{{.Description}}</p>
+  </div>
+  <div class="message focus" data-component="message"> <span class="close small"></span>
+    <mark>OTSS</mark> manages MSIS, TIMS, ELMS and other applications for the Mississippi Department of Education.
+  </div>
+  <div id="action-buttons">
+    <a class="button primary big" href="https://github.com/jeblister/kube/releases" onclick="_gaq.push(['_trackEvent', 'kube', 'download']);">Download</a> <a class="button outline big" href="https://github.com/jeblister/kube" onclick="_gaq.push(['_trackEvent', 'kube', 'github']);">View on Github</a>
+    <p>Zip-archive, includes all the source and site example files</p>
+  </div> -->
+  
+  <div id="kube-features">
+    <div class="row gutters">
+      <div class="col col-4 item">
+        <figure>
+          <img alt="MSIS" height="48" src="{{ "/img/msis.png" | relURL }}" width="100">
+        </figure>
+        <h3>MSIS</h3>
+        <p>The Mississippi Student Information System <mark>MSIS</mark> is an information system. For students.</p>
+        <a class="button primary small" href="">User Guide</a>
+        <a class="button small" href="">Tech Docs</a>
+        <a class="button small" href="">API Docs</a>
+      </div>
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Typography" height="48" src="{{ "/img/elms.png" | relURL }}" width="100">
+        </figure>
+        <h3>ELMS</h3>
+        <p>Our Educator Licensure Management System. I needed two lines so stuff lined up.</p>
+        <a class="button primary small" href="">User Guide</a>
+        <a class="button small" href="">Tech Docs</a>
+        <a class="button small" href="">API Docs</a>
+      </div>
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Minimalism" height="48" src="{{ "/img/tims.png" | relURL }}" width="100">
+        </figure>
+        <h3>TIMS</h3>
+        <p>The Textbook Inventory Management System for districts.</p>
+        <a class="button primary small" href="">User Guide</a>
+        <a class="button small" href="">Tech Docs</a>
+        <a class="button small" href="">API Docs</a>
+      </div>
+    </div>
+    <div class="row gutters">
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Minimalism" height="48" src="{{ "/img/midas.png" | relURL }}" width="100">
+        </figure>
+        <h3>MIDAS</h3>
+        <p>The Mississippi something something system. Here's a second line, too.</p>
+        <a class="button primary small" href="">User Guide</a>
+        <a class="button small" href="">Tech Docs</a>
+        <a class="button small" href="">API Docs</a>
+      </div>
+      <div class="col col-4 item">
+          <figure>
+            <img alt="Minimalism" height="48" src="{{ "/img/internal-dash.png" | relURL }}" width="100">
+          </figure>
+          <h3>Internal Dashboards</h3>
+          <p>Dashboards for MDE users. They're awesome. And in Tableau.</p>
+          <a class="button primary small" href="">User Guide</a>
+          <a class="button small" href="">Tech Docs</a>
+          <a class="button small" href="">API Docs</a>
+      </div>
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Minimalism" height="48" src="{{ "/img/edw.png" | relURL }}" width="100">
+        </figure>
+        <h3>Data Warehouse</h3>
+        <p>We built this because your data warehouse solution is expensive and it sucks.</p>
+      <a class="button primary small" href="">User Guide</a>
+      <a class="button small" href="">Tech Docs</a>
+      <a class="button small" href="">API Docs</a>
+    </div>
+  </div>
+</div>
+</div>
+{{ end }}
+{{ define "footer"}} {{ partial "footer" .}} {{end}}
+
